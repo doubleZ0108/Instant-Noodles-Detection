@@ -1,3 +1,9 @@
+# Instant Noodles Detection
+
+[toc]
+
+------
+
 --2.1创建yolo-obj.cfg 文件，将 yolov4-custom.cfg 中的内容复制到 yolo-obj.cfg里面并做以下修改。
 
 　　--2.1.1修改subdivisions=16(如果报内存不足，将subdivisions设置为32或64)
