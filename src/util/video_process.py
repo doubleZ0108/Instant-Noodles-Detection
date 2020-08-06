@@ -52,12 +52,13 @@ def frame2video(im_dir,video_dir,fps):
   print('finish')
  
 if __name__ == '__main__':
-  # videos_path = 'video/supermarket.mp4'
-  # frames_save_path = 'img/'
-  # time_interval = 2         #隔一帧保存一次
-  # video2frame(videos_path, frames_save_path, time_interval)
+  '''拆分视频为图像'''
+  videos_path = 'video/supermarket.mp4'
+  frames_save_path = 'img/'
+  time_interval = 2         #隔一帧保存一次
+  video2frame(videos_path, frames_save_path, time_interval)
 
-  #############################################
+  '''合并照片为视频'''
   im_dir = 'img/'
   video_dir = 'test.avi'
   fps =  15           #帧率，每秒钟帧数越多，所显示的动作就会越流畅

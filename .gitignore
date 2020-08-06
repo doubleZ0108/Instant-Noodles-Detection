@@ -129,7 +129,6 @@ dmypy.json
 .pyre/
 .DS_Store
 .vscode/
-video/
 img/
 result*/
 predictions (47).jpg

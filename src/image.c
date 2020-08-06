@@ -441,6 +441,8 @@ void draw_detections_v3(image im, detection *dets, int num, float thresh, char *
                         strcat(labelstr, names[j]);
                     }
                 }
+                
+                const int best_class = selected_detections[i].best_class;
                 char doublez_str[80];
                 sprintf(doublez_str,"%s: %.0f%%", names[best_class],selected_detections[i].det.prob[best_class] * 100);
                 image label = get_label_v3(alphabet, doublez_str, (im.h*.02));
