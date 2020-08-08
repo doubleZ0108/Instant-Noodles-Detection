@@ -17,10 +17,19 @@
 
 在各位学长前辈和同学的共同努力下，我们有了属于同济软件树莓的一套**<u>方便面数据集</u>**，软件学院大团结，树莓大团结
 
-> 方便面数据集地址(train & valid):
+> **【方便面数据集地址(train & valid)】**
 >
 > - 坚果云：https://www.jianguoyun.com/p/DTx85AIQnbLZCBidsrID (访问密码：oWCwUh)
 > - 百度云：链接:https://pan.baidu.com/s/1GvUIxbKG8nf_r1g6MjtGuw  密码:5b5i
+>
+> **【训练后的权重】**
+>
+> （文件较大，需要科学上网获取）
+>
+> - yolov3https://drive.google.com/file/d/15noSWF8llqn8tb_9-u8Wu-unTAQYZfxW/view?usp=sharing
+> - yolov4：https://drive.google.com/file/d/11Hv_DckfhrOPfz1LP2ybo_Xh_SePWQsv/view?usp=sharing
+>
+> 由于第一次做数据集拍摄、标注和目标检测相关神经网络，效果比较一般，见谅。
 
 在这次作业之后又从0体验了整个目标检测的深度学习实验，如果想自己体验完整的流程可以参考我在浙大暑期实习的这个repo：https://github.com/doubleZ0108/IDEA-Lab-Summer-Camp ，尤其在数据集扩充的时候找到了比较好的实践，可以参考我写的这个repo：https://github.com/doubleZ0108/Data-Augmentation
 
@@ -72,11 +81,11 @@ In intelligent retail, one task is to investigate the proportion of each commodi
 
 ## 实验结果
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-3faf74feb7aa0bfb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions - 2020-06-20T200151.106" style="zoom:50%;" />
+<img src="https://upload-images.jianshu.io/upload_images/12014150-3faf74feb7aa0bfb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions - 2020-06-20T200151.106" width="50%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-e92738785848c7f2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions - 2020-06-20T201918.731" style="zoom:50%;" />
+<img src="https://upload-images.jianshu.io/upload_images/12014150-e92738785848c7f2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions - 2020-06-20T201918.731" width="60%;" />
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-9dadec73b2839c1c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions (45)" style="zoom:50%;" />
+<img src="https://upload-images.jianshu.io/upload_images/12014150-9dadec73b2839c1c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions (45)" width="60%;" />
 
 <br/>
 
@@ -90,10 +99,10 @@ In intelligent retail, one task is to investigate the proportion of each commodi
 
 ## 关于作者
 
-|    Name     |                Zhe ZHANG \| doubleZ                 |
-| :---------: | :-------------------------------------------------: |
-|     ID      |                       1754060                       |
-|   Advisor   |                   Prof. Lin ZHANG                   |
-| Course Name |                   Computer Vision                   |
-| Assignment  |                  Object Detection                   |
-|    Email    | [dbzdbz@tongji.edu.cn](mailto:dbzdbz@tongji.edu.cn) |
+|   Name   |                        张喆                         |
+| :------: | :-------------------------------------------------: |
+|   学号   |                       1754060                       |
+| 指导老师 |                      张林教授                       |
+| 课程名称 |                     计算机视觉                      |
+| 项目名称 |                      目标检测                       |
+| 联系方式 | [dbzdbz@tongji.edu.cn](mailto:dbzdbz@tongji.edu.cn) |
