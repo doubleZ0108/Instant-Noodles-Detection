@@ -1,6 +1,11 @@
 # Instant Noodles Detection
 
-[toc]
+* [写在前面](#写在前面)
+* [背景介绍](#背景介绍)
+* [项目结构](#项目结构)
+* [实验结果](#实验结果)
+* [开发环境](#开发环境)
+* [关于作者](#关于作者)
 
 ------
 
@@ -10,18 +15,18 @@
 
 但是自己也明白，作业只是在使用成熟的框架，对深度学习本身并没有任何实质性的理解，允悲。
 
-在各位学长前辈和同学的共同努力下，我们有了属于同济软件树莓的一套***<u>方便面数据集</u>***，软件学院大团结，树莓大团结
+在各位学长前辈和同学的共同努力下，我们有了属于同济软件树莓的一套**<u>方便面数据集</u>**，软件学院大团结，树莓大团结
 
 > 方便面数据集地址(train & valid):
 >
-> - 坚果云：
-> - 百度云：
+> - 坚果云：https://www.jianguoyun.com/p/DTx85AIQnbLZCBidsrID (访问密码：oWCwUh)
+> - 百度云：链接:https://pan.baidu.com/s/1GvUIxbKG8nf_r1g6MjtGuw  密码:5b5i
 
-在这次作业之后又从0体验了整个目标检测的深度学习实验，如果想自己体验完整的流程可以参考我在浙大暑期实习的这个repo：https://github.com/doubleZ0108/IDEA-Lab-Summer-Camp，尤其在数据集扩充的时候找到了比较好的实践，可以参考我写的这个repo：https://github.com/doubleZ0108/Data-Augmentation
+在这次作业之后又从0体验了整个目标检测的深度学习实验，如果想自己体验完整的流程可以参考我在浙大暑期实习的这个repo：https://github.com/doubleZ0108/IDEA-Lab-Summer-Camp ，尤其在数据集扩充的时候找到了比较好的实践，可以参考我写的这个repo：https://github.com/doubleZ0108/Data-Augmentation
 
 现在深度学习的门槛越来越低，成熟框架也越来越完善，越来越变成专业调包侠，很多时候环境配置的时间占据了大头；希望之后有机会能弥补这些遗憾，能深入的学习这其中的原理。
 
-这次作业主要参考的最佳实践来自：https://www.youtube.com/watch?v=10joRJt39Ns，真的是很详细的视频教程，可以0成本完成自定义识别种类的目标检测算法。
+这次作业主要参考的最佳实践来自：https://www.youtube.com/watch?v=10joRJt39Ns ，真的是很详细的视频教程，可以0成本完成自定义识别种类的目标检测算法。
 
 <br/>
 
@@ -29,7 +34,7 @@
 
 In intelligent retail, one task is to investigate the proportion of each commodity occupying shelves. In this assignment, suppose that you are provided a surveillance video of a shelf and you need to recognize and locate two specific kinds of products, “康师傅香辣牛肉面” and “康师父卤香牛肉面” in real time. You are recommended to use YoloV2 (an object detection approach) for this task.
 
-<img src="README.assets/image-20200808124537594.png" alt="image-20200808124537594" width="50%;" />
+<img src="https://upload-images.jianshu.io/upload_images/12014150-14535aa28a065f28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image-20200808124537594" width="50%;" />
 
 <br/>
 
@@ -53,6 +58,7 @@ In intelligent retail, one task is to investigate the proportion of each commodi
   - `supermarket.mp4`：原始视频
   - `yolov3_result.mp4`
   - `yolov4_result.mp4`
+- `doc/document.md`：实验文档
 
 > **【cfg配置参考】**
 >
@@ -61,6 +67,16 @@ In intelligent retail, one task is to investigate the proportion of each commodi
 > - steps：80% 到 90% 的max_batches值  比如max_batches=4000，则steps=3200,3600
 > - classes：全局搜索 [yolo] 可以搜到3次，每次搜到的内容中修改classes=你自己的类别 比如classes=2
 > - filters：一样先搜索 [yolo] ,每次搜的yolo上一个[convolution] 中 filters=(classes + 5)x3  比如filters=21
+
+<br/>
+
+## 实验结果
+
+<img src="https://upload-images.jianshu.io/upload_images/12014150-3faf74feb7aa0bfb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions - 2020-06-20T200151.106" style="zoom:50%;" />
+
+<img src="https://upload-images.jianshu.io/upload_images/12014150-e92738785848c7f2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions - 2020-06-20T201918.731" style="zoom:50%;" />
+
+<img src="https://upload-images.jianshu.io/upload_images/12014150-9dadec73b2839c1c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions (45)" style="zoom:50%;" />
 
 <br/>
 

@@ -1,6 +1,8 @@
-# Problem2
+# Instant Noodles Detection Document
 
-[toc]
+* [Solution](#solution)
+* [Result](#result)
+* [Others](#others)
 
 ------
 
