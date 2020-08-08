@@ -132,3 +132,5 @@ dmypy.json
 img/
 result*/
 predictions (47).jpg
+video/
+*.assets/
