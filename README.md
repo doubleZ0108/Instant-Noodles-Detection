@@ -19,15 +19,15 @@
 
 > **【方便面数据集地址(train & valid)】**
 >
-> - 坚果云：https://www.jianguoyun.com/p/DTx85AIQnbLZCBidsrID (访问密码：oWCwUh)
-> - 百度云：链接:https://pan.baidu.com/s/1GvUIxbKG8nf_r1g6MjtGuw  密码:5b5i
+> - **坚果云**：https://www.jianguoyun.com/p/DTx85AIQnbLZCBidsrID (访问密码：oWCwUh)
+> - **百度云**：链接:https://pan.baidu.com/s/1GvUIxbKG8nf_r1g6MjtGuw  密码:5b5i
 >
 > **【训练后的权重】**
 >
 > （文件较大，需要科学上网获取）
 >
-> - yolov3https://drive.google.com/file/d/15noSWF8llqn8tb_9-u8Wu-unTAQYZfxW/view?usp=sharing
-> - yolov4：https://drive.google.com/file/d/11Hv_DckfhrOPfz1LP2ybo_Xh_SePWQsv/view?usp=sharing
+> - **yolov3**：https://drive.google.com/file/d/15noSWF8llqn8tb_9-u8Wu-unTAQYZfxW/view?usp=sharing
+> - **yolov4**：https://drive.google.com/file/d/11Hv_DckfhrOPfz1LP2ybo_Xh_SePWQsv/view?usp=sharing
 >
 > 由于第一次做数据集拍摄、标注和目标检测相关神经网络，效果比较一般，见谅。
 
@@ -71,15 +71,18 @@ In intelligent retail, one task is to investigate the proportion of each commodi
 
 > **【cfg配置参考】**
 >
-> - subdivisions=16：如果报内存不足，将subdivisions设置为32或64
-> - max_batches=classes*2000：例如有2个类别人和车 ，那么就设置为4000
-> - steps：80% 到 90% 的max_batches值  比如max_batches=4000，则steps=3200,3600
-> - classes：全局搜索 [yolo] 可以搜到3次，每次搜到的内容中修改classes=你自己的类别 比如classes=2
-> - filters：一样先搜索 [yolo] ,每次搜的yolo上一个[convolution] 中 filters=(classes + 5)x3  比如filters=21
+> - `subdivisions=16`：如果报内存不足，将subdivisions设置为32或64
+> - `max_batches`：classes*2000，例如有2个类别人和车 ，那么就设置为4000
+> - `steps`：80% 到 90% 的max_batches值  比如max_batches=4000，则steps=3200,3600
+> - `classes`：全局搜索 [yolo] 可以搜到3次，每次搜到的内容中修改classes=你自己的类别 比如classes=2
+> - `filters`：一样先搜索 [yolo] ,每次搜的yolo上一个[convolution] 中 filters=(classes + 5)x3  比如filters=21
 
 <br/>
 
 ## 实验结果
+
+- **yolov3识别结果视频**：链接:https://pan.baidu.com/s/1Gyds0z87Ii9vD_xx473eNQ  密码:06qc
+- **yolov4识别结果视频**：链接:https://pan.baidu.com/s/1fbif1gN6Ygsk42sNcwz28g  密码:to50
 
 <img src="https://upload-images.jianshu.io/upload_images/12014150-3faf74feb7aa0bfb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="predictions - 2020-06-20T200151.106" width="50%;" />
 
