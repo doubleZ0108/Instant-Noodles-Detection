@@ -1,4 +1,4 @@
-# Instant Noodles Detection
+# 方便面识别 | Instant Noodles Detection
 
 * [写在前面](#写在前面)
 * [背景介绍](#背景介绍)
@@ -105,7 +105,7 @@ In intelligent retail, one task is to investigate the proportion of each commodi
 |   Name   |                        张喆                         |
 | :------: | :-------------------------------------------------: |
 |   学号   |                       1754060                       |
-| 指导老师 |                      张林教授                       |
+| 指导老师 |                      [张林教授](https://sse.tongji.edu.cn/linzhang/)                       |
 | 课程名称 |                     计算机视觉                      |
 | 项目名称 |                      目标检测                       |
 | 联系方式 | [dbzdbz@tongji.edu.cn](mailto:dbzdbz@tongji.edu.cn) |
